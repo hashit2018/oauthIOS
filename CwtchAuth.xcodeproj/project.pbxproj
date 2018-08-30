@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A11829C942B417097E00F00 /* Pods_CwtchAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F374999020775FDEBA60E39 /* Pods_CwtchAuth.framework */; };
+		731E1D9D212D53E800A95B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E1D9C212D53E800A95B11 /* AppDelegate.m */; };
+		731E1DA0212D53E800A95B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E1D9F212D53E800A95B11 /* ViewController.m */; };
+		731E1DA3212D53E800A95B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731E1DA1212D53E800A95B11 /* Main.storyboard */; };
+		731E1DA5212D53EA00A95B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731E1DA4212D53EA00A95B11 /* Assets.xcassets */; };
+		731E1DA8212D53EA00A95B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731E1DA6212D53EA00A95B11 /* LaunchScreen.storyboard */; };
+		731E1DAB212D53EA00A95B11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E1DAA212D53EA00A95B11 /* main.m */; };
+		731E1DB5212D53EB00A95B11 /* CwtchAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E1DB4212D53EB00A95B11 /* CwtchAuthTests.m */; };
+		731E1DC0212D53EB00A95B11 /* CwtchAuthUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E1DBF212D53EB00A95B11 /* CwtchAuthUITests.m */; };
+		731E1E062136522400A95B11 /* LoginTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E1E042136522400A95B11 /* LoginTestViewController.m */; };
+		731E1E072136522400A95B11 /* LoginTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 731E1E052136522400A95B11 /* LoginTestViewController.xib */; };
+		731E1E0B2136543200A95B11 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731E1E0A2136543200A95B11 /* AFNetworking.framework */; };
+		731E1ECE21367B5000A95B11 /* CwtchSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 731E1ECD21367B5000A95B11 /* CwtchSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		731E1DB1212D53EB00A95B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 731E1D90212D53E800A95B11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 731E1D97212D53E800A95B11;
+			remoteInfo = CwtchAuth;
+		};
+		731E1DBC212D53EB00A95B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 731E1D90212D53E800A95B11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 731E1D97212D53E800A95B11;
+			remoteInfo = CwtchAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		157F28C8502BEFB078CAB2A3 /* Pods-CwtchAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwtchAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CwtchAuth/Pods-CwtchAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		1F374999020775FDEBA60E39 /* Pods_CwtchAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CwtchAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		731E1D98212D53E800A95B11 /* CwtchAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CwtchAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		731E1D9B212D53E800A95B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		731E1D9C212D53E800A95B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		731E1D9E212D53E800A95B11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		731E1D9F212D53E800A95B11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		731E1DA2212D53E800A95B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		731E1DA4212D53EA00A95B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		731E1DA7212D53EA00A95B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		731E1DA9212D53EA00A95B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731E1DAA212D53EA00A95B11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		731E1DB0212D53EB00A95B11 /* CwtchAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CwtchAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		731E1DB4212D53EB00A95B11 /* CwtchAuthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CwtchAuthTests.m; sourceTree = "<group>"; };
+		731E1DB6212D53EB00A95B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731E1DBB212D53EB00A95B11 /* CwtchAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CwtchAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		731E1DBF212D53EB00A95B11 /* CwtchAuthUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CwtchAuthUITests.m; sourceTree = "<group>"; };
+		731E1DC1212D53EB00A95B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731E1DE6212E97C400A95B11 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		731E1E032136522400A95B11 /* LoginTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTestViewController.h; sourceTree = "<group>"; };
+		731E1E042136522400A95B11 /* LoginTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTestViewController.m; sourceTree = "<group>"; };
+		731E1E052136522400A95B11 /* LoginTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginTestViewController.xib; sourceTree = "<group>"; };
+		731E1E08213653C200A95B11 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		731E1E0A2136543200A95B11 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		731E1ECD21367B5000A95B11 /* CwtchSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = CwtchSDK.a; sourceTree = "<group>"; };
+		731E1ECF21367B6000A95B11 /* CwtchSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwtchSDK.h; sourceTree = "<group>"; };
+		BA6CC74BB58185D030E1D7DE /* Pods-CwtchAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwtchAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-CwtchAuth/Pods-CwtchAuth.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		731E1D95212D53E800A95B11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731E1ECE21367B5000A95B11 /* CwtchSDK.a in Frameworks */,
+				731E1E0B2136543200A95B11 /* AFNetworking.framework in Frameworks */,
+				4A11829C942B417097E00F00 /* Pods_CwtchAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731E1DAD212D53EA00A95B11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731E1DB8212D53EB00A95B11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2949A5145BAFF4FE38B49D72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				157F28C8502BEFB078CAB2A3 /* Pods-CwtchAuth.debug.xcconfig */,
+				BA6CC74BB58185D030E1D7DE /* Pods-CwtchAuth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		731E1D8F212D53E800A95B11 = {
+			isa = PBXGroup;
+			children = (
+				731E1DE6212E97C400A95B11 /* Header.h */,
+				731E1D9A212D53E800A95B11 /* CwtchAuth */,
+				731E1DB3212D53EB00A95B11 /* CwtchAuthTests */,
+				731E1DBE212D53EB00A95B11 /* CwtchAuthUITests */,
+				731E1D99212D53E800A95B11 /* Products */,
+				2949A5145BAFF4FE38B49D72 /* Pods */,
+				BAF8E2AED955650C55957CAB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		731E1D99212D53E800A95B11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				731E1D98212D53E800A95B11 /* CwtchAuth.app */,
+				731E1DB0212D53EB00A95B11 /* CwtchAuthTests.xctest */,
+				731E1DBB212D53EB00A95B11 /* CwtchAuthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		731E1D9A212D53E800A95B11 /* CwtchAuth */ = {
+			isa = PBXGroup;
+			children = (
+				731E1EA02136783000A95B11 /* CwtchSDK */,
+				731E1D9B212D53E800A95B11 /* AppDelegate.h */,
+				731E1D9C212D53E800A95B11 /* AppDelegate.m */,
+				731E1E032136522400A95B11 /* LoginTestViewController.h */,
+				731E1E042136522400A95B11 /* LoginTestViewController.m */,
+				731E1E052136522400A95B11 /* LoginTestViewController.xib */,
+				731E1D9E212D53E800A95B11 /* ViewController.h */,
+				731E1D9F212D53E800A95B11 /* ViewController.m */,
+				731E1DA1212D53E800A95B11 /* Main.storyboard */,
+				731E1DA4212D53EA00A95B11 /* Assets.xcassets */,
+				731E1DA6212D53EA00A95B11 /* LaunchScreen.storyboard */,
+				731E1DA9212D53EA00A95B11 /* Info.plist */,
+				731E1DAA212D53EA00A95B11 /* main.m */,
+			);
+			path = CwtchAuth;
+			sourceTree = "<group>";
+		};
+		731E1DB3212D53EB00A95B11 /* CwtchAuthTests */ = {
+			isa = PBXGroup;
+			children = (
+				731E1DB4212D53EB00A95B11 /* CwtchAuthTests.m */,
+				731E1DB6212D53EB00A95B11 /* Info.plist */,
+			);
+			path = CwtchAuthTests;
+			sourceTree = "<group>";
+		};
+		731E1DBE212D53EB00A95B11 /* CwtchAuthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				731E1DBF212D53EB00A95B11 /* CwtchAuthUITests.m */,
+				731E1DC1212D53EB00A95B11 /* Info.plist */,
+			);
+			path = CwtchAuthUITests;
+			sourceTree = "<group>";
+		};
+		731E1EA02136783000A95B11 /* CwtchSDK */ = {
+			isa = PBXGroup;
+			children = (
+				731E1ECD21367B5000A95B11 /* CwtchSDK.a */,
+				731E1ECF21367B6000A95B11 /* CwtchSDK.h */,
+			);
+			path = CwtchSDK;
+			sourceTree = "<group>";
+		};
+		BAF8E2AED955650C55957CAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				731E1E0A2136543200A95B11 /* AFNetworking.framework */,
+				731E1E08213653C200A95B11 /* AFNetworking.framework */,
+				1F374999020775FDEBA60E39 /* Pods_CwtchAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		731E1D97212D53E800A95B11 /* CwtchAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 731E1DC4212D53EB00A95B11 /* Build configuration list for PBXNativeTarget "CwtchAuth" */;
+			buildPhases = (
+				3669A05D8DEB2C73E61CD21B /* [CP] Check Pods Manifest.lock */,
+				731E1D94212D53E800A95B11 /* Sources */,
+				731E1D95212D53E800A95B11 /* Frameworks */,
+				731E1D96212D53E800A95B11 /* Resources */,
+				6E8F74122A0D630ACC7480AD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CwtchAuth;
+			productName = CwtchAuth;
+			productReference = 731E1D98212D53E800A95B11 /* CwtchAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		731E1DAF212D53EA00A95B11 /* CwtchAuthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 731E1DC7212D53EB00A95B11 /* Build configuration list for PBXNativeTarget "CwtchAuthTests" */;
+			buildPhases = (
+				731E1DAC212D53EA00A95B11 /* Sources */,
+				731E1DAD212D53EA00A95B11 /* Frameworks */,
+				731E1DAE212D53EA00A95B11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				731E1DB2212D53EB00A95B11 /* PBXTargetDependency */,
+			);
+			name = CwtchAuthTests;
+			productName = CwtchAuthTests;
+			productReference = 731E1DB0212D53EB00A95B11 /* CwtchAuthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		731E1DBA212D53EB00A95B11 /* CwtchAuthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 731E1DCA212D53EB00A95B11 /* Build configuration list for PBXNativeTarget "CwtchAuthUITests" */;
+			buildPhases = (
+				731E1DB7212D53EB00A95B11 /* Sources */,
+				731E1DB8212D53EB00A95B11 /* Frameworks */,
+				731E1DB9212D53EB00A95B11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				731E1DBD212D53EB00A95B11 /* PBXTargetDependency */,
+			);
+			name = CwtchAuthUITests;
+			productName = CwtchAuthUITests;
+			productReference = 731E1DBB212D53EB00A95B11 /* CwtchAuthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		731E1D90212D53E800A95B11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "林域";
+				TargetAttributes = {
+					731E1D97212D53E800A95B11 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					731E1DAF212D53EA00A95B11 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 731E1D97212D53E800A95B11;
+					};
+					731E1DBA212D53EB00A95B11 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 731E1D97212D53E800A95B11;
+					};
+				};
+			};
+			buildConfigurationList = 731E1D93212D53E800A95B11 /* Build configuration list for PBXProject "CwtchAuth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 731E1D8F212D53E800A95B11;
+			productRefGroup = 731E1D99212D53E800A95B11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				731E1D97212D53E800A95B11 /* CwtchAuth */,
+				731E1DAF212D53EA00A95B11 /* CwtchAuthTests */,
+				731E1DBA212D53EB00A95B11 /* CwtchAuthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		731E1D96212D53E800A95B11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731E1E072136522400A95B11 /* LoginTestViewController.xib in Resources */,
+				731E1DA8212D53EA00A95B11 /* LaunchScreen.storyboard in Resources */,
+				731E1DA5212D53EA00A95B11 /* Assets.xcassets in Resources */,
+				731E1DA3212D53E800A95B11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731E1DAE212D53EA00A95B11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731E1DB9212D53EB00A95B11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3669A05D8DEB2C73E61CD21B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CwtchAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8F74122A0D630ACC7480AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CwtchAuth/Pods-CwtchAuth-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CwtchAuth/Pods-CwtchAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		731E1D94212D53E800A95B11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731E1E062136522400A95B11 /* LoginTestViewController.m in Sources */,
+				731E1DA0212D53E800A95B11 /* ViewController.m in Sources */,
+				731E1DAB212D53EA00A95B11 /* main.m in Sources */,
+				731E1D9D212D53E800A95B11 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731E1DAC212D53EA00A95B11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731E1DB5212D53EB00A95B11 /* CwtchAuthTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731E1DB7212D53EB00A95B11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731E1DC0212D53EB00A95B11 /* CwtchAuthUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		731E1DB2212D53EB00A95B11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 731E1D97212D53E800A95B11 /* CwtchAuth */;
+			targetProxy = 731E1DB1212D53EB00A95B11 /* PBXContainerItemProxy */;
+		};
+		731E1DBD212D53EB00A95B11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 731E1D97212D53E800A95B11 /* CwtchAuth */;
+			targetProxy = 731E1DBC212D53EB00A95B11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		731E1DA1212D53E800A95B11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				731E1DA2212D53E800A95B11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		731E1DA6212D53EA00A95B11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				731E1DA7212D53EA00A95B11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		731E1DC2212D53EB00A95B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		731E1DC3212D53EB00A95B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		731E1DC5212D53EB00A95B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 157F28C8502BEFB078CAB2A3 /* Pods-CwtchAuth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M69H647QU3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/linyu/Desktop/CwtchAuthDemo/Header.h;
+				INFOPLIST_FILE = CwtchAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CwtchAuth",
+					"$(PROJECT_DIR)/CwtchAuth/CwtchSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		731E1DC6212D53EB00A95B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA6CC74BB58185D030E1D7DE /* Pods-CwtchAuth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M69H647QU3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/linyu/Desktop/CwtchAuthDemo/Header.h;
+				INFOPLIST_FILE = CwtchAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CwtchAuth",
+					"$(PROJECT_DIR)/CwtchAuth/CwtchSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		731E1DC8212D53EB00A95B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CwtchAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.com.CwtchAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CwtchAuth.app/CwtchAuth";
+			};
+			name = Debug;
+		};
+		731E1DC9212D53EB00A95B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CwtchAuthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.com.CwtchAuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CwtchAuth.app/CwtchAuth";
+			};
+			name = Release;
+		};
+		731E1DCB212D53EB00A95B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CwtchAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.com.CwtchAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CwtchAuth;
+			};
+			name = Debug;
+		};
+		731E1DCC212D53EB00A95B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CwtchAuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linyu.com.CwtchAuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CwtchAuth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		731E1D93212D53E800A95B11 /* Build configuration list for PBXProject "CwtchAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731E1DC2212D53EB00A95B11 /* Debug */,
+				731E1DC3212D53EB00A95B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		731E1DC4212D53EB00A95B11 /* Build configuration list for PBXNativeTarget "CwtchAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731E1DC5212D53EB00A95B11 /* Debug */,
+				731E1DC6212D53EB00A95B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		731E1DC7212D53EB00A95B11 /* Build configuration list for PBXNativeTarget "CwtchAuthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731E1DC8212D53EB00A95B11 /* Debug */,
+				731E1DC9212D53EB00A95B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		731E1DCA212D53EB00A95B11 /* Build configuration list for PBXNativeTarget "CwtchAuthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731E1DCB212D53EB00A95B11 /* Debug */,
+				731E1DCC212D53EB00A95B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 731E1D90212D53E800A95B11 /* Project object */;
+}

@@ -147,6 +147,12 @@ typedef NS_ENUM(NSInteger, CwtchSDKLanguageType)
  */
 @property (nonatomic, strong) NSString *redirectURI;
 
+/**
+ 以空格分隔的权限列表，若不传递此参数，代表请求用户的默认权限
+ 参考开放平台权限列表
+ @warning 长度小于1K
+ */
+@property (nonatomic, strong) NSString *scope;
 @end
 
 /**

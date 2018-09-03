@@ -9,13 +9,11 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "CwtchSDK.h"
+
 @interface AppDelegate ()<CwtchSDKDelegate>
 
 @end
-
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [CwtchSDK registerApp:Appkey];

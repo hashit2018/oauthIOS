@@ -16,7 +16,6 @@
 @end
 
 @implementation LoginTestViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.logoutButton];
@@ -43,10 +42,7 @@
 }
 
 - (IBAction)logout:(id)sender {
-    
-    NSString *path = @"logout";
-    NSString *baseUrlStr = @"http://192.168.254.141:1112";
-    [self requestWithBaseURL:baseUrlStr path:path params:nil];
+    [self requestWithBaseURL:BaseUrl path:LogoutPath params:nil];
 }
 
 - (void)requestWithBaseURL:(NSString *)baseUrlStr

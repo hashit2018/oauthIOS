@@ -10,12 +10,9 @@
 #import "CwtchSDK.h"
 #import "AFNetworking.h"
 #import "LoginTestViewController.h"
-
-
 @interface ViewController ()
 
 @end
-
 @implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,17 +21,15 @@
 - (IBAction)authLogin:(id)sender {
     
     CwtchAuthorizeRequest *request = [CwtchAuthorizeRequest new];
-    request.state = @"Verification";
-    request.redirectURI = @"http://your_callback_uri";
+    request.state = @"d";
+    request.scope = @"1";
+    request.redirectURI = kRedirectURI;
     [CwtchSDK sendRequest:request];
 }
 
 - (void)loginByAuthCode:(NSDictionary *)params {
     if (![params isKindOfClass:[NSDictionary class]] && params!=nil) return;
-    
-    NSString *path = @"loginByAuthCode";
-    NSString *baseUrlStr = @"http://192.168.254.141:1112";
-    [self requestWithBaseURL:baseUrlStr path:path params:params];
+    [self requestWithBaseURL:BaseUrl path:LoginPath params:params];
 }
 
 - (void)requestWithBaseURL:(NSString *)baseUrlStr
@@ -44,7 +39,7 @@
     NSURL *baseUrl = [NSURL URLWithString:baseUrlStr];
     NSMutableDictionary *dict = params.mutableCopy;
     [dict setObject:Appkey forKey:@"ClientId"];
-    [dict setObject:Appkey forKey:@"ClientSecret"];
+    [dict setObject:AppSecret forKey:@"ClientSecret"];
     params = dict;
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseUrl];
@@ -57,9 +52,9 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
+        NSLog(@"responseObject == %@",responseObject);
         NSInteger code = [responseObject[@"code"] integerValue];
         if (code == 20000) {
-            
             LoginTestViewController *loginVC = [LoginTestViewController new];
             loginVC.responseObject = responseObject;
             [self presentViewController:loginVC animated:YES completion:nil];

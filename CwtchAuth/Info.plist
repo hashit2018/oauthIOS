@@ -25,7 +25,7 @@
 			<string>com.cwtch</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>1111</string>
+				<string>sampleClientId</string>
 			</array>
 		</dict>
 	</array>

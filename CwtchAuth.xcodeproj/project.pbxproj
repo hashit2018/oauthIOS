@@ -19,7 +19,7 @@
 		731E1E062136522400A95B11 /* LoginTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E1E042136522400A95B11 /* LoginTestViewController.m */; };
 		731E1E072136522400A95B11 /* LoginTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 731E1E052136522400A95B11 /* LoginTestViewController.xib */; };
 		731E1E0B2136543200A95B11 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731E1E0A2136543200A95B11 /* AFNetworking.framework */; };
-		731E1ECE21367B5000A95B11 /* CwtchSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 731E1ECD21367B5000A95B11 /* CwtchSDK.a */; };
+		7322046F213D57FC00CDA5E4 /* CwtchSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7322046E213D57FC00CDA5E4 /* CwtchSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +64,8 @@
 		731E1E052136522400A95B11 /* LoginTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginTestViewController.xib; sourceTree = "<group>"; };
 		731E1E08213653C200A95B11 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		731E1E0A2136543200A95B11 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		731E1ECD21367B5000A95B11 /* CwtchSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = CwtchSDK.a; sourceTree = "<group>"; };
-		731E1ECF21367B6000A95B11 /* CwtchSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwtchSDK.h; sourceTree = "<group>"; };
+		7322044F213D4AB200CDA5E4 /* CwtchSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwtchSDK.h; sourceTree = "<group>"; };
+		7322046E213D57FC00CDA5E4 /* CwtchSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = CwtchSDK.a; sourceTree = "<group>"; };
 		BA6CC74BB58185D030E1D7DE /* Pods-CwtchAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CwtchAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-CwtchAuth/Pods-CwtchAuth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				731E1ECE21367B5000A95B11 /* CwtchSDK.a in Frameworks */,
+				7322046F213D57FC00CDA5E4 /* CwtchSDK.a in Frameworks */,
 				731E1E0B2136543200A95B11 /* AFNetworking.framework in Frameworks */,
 				4A11829C942B417097E00F00 /* Pods_CwtchAuth.framework in Frameworks */,
 			);
@@ -109,7 +109,6 @@
 		731E1D8F212D53E800A95B11 = {
 			isa = PBXGroup;
 			children = (
-				731E1DE6212E97C400A95B11 /* Header.h */,
 				731E1D9A212D53E800A95B11 /* CwtchAuth */,
 				731E1DB3212D53EB00A95B11 /* CwtchAuthTests */,
 				731E1DBE212D53EB00A95B11 /* CwtchAuthUITests */,
@@ -132,6 +131,7 @@
 		731E1D9A212D53E800A95B11 /* CwtchAuth */ = {
 			isa = PBXGroup;
 			children = (
+				731E1DE6212E97C400A95B11 /* Header.h */,
 				731E1EA02136783000A95B11 /* CwtchSDK */,
 				731E1D9B212D53E800A95B11 /* AppDelegate.h */,
 				731E1D9C212D53E800A95B11 /* AppDelegate.m */,
@@ -170,8 +170,8 @@
 		731E1EA02136783000A95B11 /* CwtchSDK */ = {
 			isa = PBXGroup;
 			children = (
-				731E1ECD21367B5000A95B11 /* CwtchSDK.a */,
-				731E1ECF21367B6000A95B11 /* CwtchSDK.h */,
+				7322044F213D4AB200CDA5E4 /* CwtchSDK.h */,
+				7322046E213D57FC00CDA5E4 /* CwtchSDK.a */,
 			);
 			path = CwtchSDK;
 			sourceTree = "<group>";
@@ -534,7 +534,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M69H647QU3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/linyu/Desktop/CwtchAuthDemo/Header.h;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CwtchAuth/Header.h";
 				INFOPLIST_FILE = CwtchAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -559,7 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M69H647QU3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/linyu/Desktop/CwtchAuthDemo/Header.h;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CwtchAuth/Header.h";
 				INFOPLIST_FILE = CwtchAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
